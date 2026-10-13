@@ -1,0 +1,85 @@
+/* Open Docket palette on the template layout. Loaded after styles.css, so these
+   tokens win. Light is on bare :root; dark repeats the template's three-state
+   pattern (system default, explicit light, explicit dark). */
+
+:root {
+  --page:#FBFBFA;
+  --page-2:#F4F5F7;
+  --page-3:#E9ECF0;
+  --ink-900:#111418;
+  --ink-600:#5C6570;
+  --ink-400:#5C6570;
+  --blue-700:#8E1D17;
+  --blue-600:#B3261E;
+  --blue-500:#C7403A;
+  --blue-300:#E8A59F;
+  --blue-100:#F8E4E2;
+  --line:#DDE1E6;
+  --line-2:#C9CED6;
+
+  --ramp-1:#E8A59F;  --ramp-2:#E08F88;  --ramp-3:#D9786F;  --ramp-4:#D0625A;
+  --ramp-5:#C7504A;  --ramp-6:#BC403A;  --ramp-7:#B3261E;  --ramp-8:#9E201A;
+  --ramp-9:#8A1C17;  --ramp-10:#761815; --ramp-11:#63140F; --ramp-12:#50100C;
+
+  --shadow-md:0 1px 3px rgba(17,20,24,.05), 0 12px 32px -16px rgba(17,20,24,.18);
+  --shadow-btn:0 1px 2px rgba(179,38,30,.28), 0 10px 24px -12px rgba(179,38,30,.45);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg:#111418;
+    --surface:#181C22;
+    --surface-2:#1E232B;
+    --text:#F2F4F7;
+    --text-muted:#A3ACB8;
+    --text-faint:#8A93A0;
+    --border:#2A303A;
+    --border-strong:#3A4250;
+    --accent:#E0584C;
+    --accent-hover:#EE7A70;
+    --accent-soft:#3A1E1C;
+    --code-ink:#F2B1AB;
+    --focus:#EE7A70;
+    --ramp-1:#4A2420; --ramp-2:#5A2B26; --ramp-3:#6B332D; --ramp-4:#7D3C35;
+    --ramp-5:#8F463D; --ramp-6:#A24F45; --ramp-7:#B65A50; --ramp-8:#C96A5F;
+    --ramp-9:#D87F75; --ramp-10:#E39A91; --ramp-11:#EDB4AD; --ramp-12:#F4CFCA;
+    --shadow-md:0 1px 3px rgba(0,0,0,.35), 0 12px 32px -16px rgba(0,0,0,.6);
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg:#111418;
+  --surface:#181C22;
+  --surface-2:#1E232B;
+  --text:#F2F4F7;
+  --text-muted:#A3ACB8;
+  --text-faint:#8A93A0;
+  --border:#2A303A;
+  --border-strong:#3A4250;
+  --accent:#E0584C;
+  --accent-hover:#EE7A70;
+  --accent-soft:#3A1E1C;
+  --code-ink:#F2B1AB;
+  --focus:#EE7A70;
+  --ramp-1:#4A2420; --ramp-2:#5A2B26; --ramp-3:#6B332D; --ramp-4:#7D3C35;
+  --ramp-5:#8F463D; --ramp-6:#A24F45; --ramp-7:#B65A50; --ramp-8:#C96A5F;
+  --ramp-9:#D87F75; --ramp-10:#E39A91; --ramp-11:#EDB4AD; --ramp-12:#F4CFCA;
+  --shadow-md:0 1px 3px rgba(0,0,0,.35), 0 12px 32px -16px rgba(0,0,0,.6);
+}
+
+/* Video inside the preview frame, cropped the same way the template crops images. */
+.preview-frame video { width:100%; height:100%; object-fit:cover; display:block; background:#000; }
+
+/* Open Docket wordmark in the nav (the template's brand uses an image mark). */
+.brand-word-text { font-weight:600; letter-spacing:.14em; text-transform:uppercase; font-size:.95rem; }
+
+/* Glow: the template's blue radial, recoloured to the Open Docket red. */
+.glow {
+  background:
+    radial-gradient(48% 42% at 50% 40%, rgba(179,38,30,.14), transparent 70%),
+    radial-gradient(70% 55% at 50% 30%, rgba(232,165,159,.22), transparent 72%);
+}
+
+/* Hero: no framed box. The text sits on the page, and the corner marks go too. */
+.frame { border:0; background:none; box-shadow:none; }
+.frame .tick { display:none; }

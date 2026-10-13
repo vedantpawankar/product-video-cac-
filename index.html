@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Open Docket — comment on the rules before they shut</title>
+<meta name="description" content="Open Docket shows federal rules open for public comment, quotes the agency's own words, and walks you from a reaction to a filed comment.">
+<meta name="color-scheme" content="light dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=1">
+<link rel="stylesheet" href="opendocket.css?v=1">
+<script>
+  // Applied before first paint so the saved theme never flashes.
+  try {
+    var t = localStorage.getItem('opendocket-theme');
+    if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+  } catch (e) {}
+</script>
+<meta property="og:title" content="Open Docket — comment on the rules before they shut">
+<meta property="og:description" content="Federal rules close for public comment on a fixed date, then shut permanently. Open Docket gets you from a reaction to a filed comment.">
+<meta property="og:type" content="website">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- Split nav: links to the sides, the wordmark centred and alone. -->
+<header class="nav">
+  <nav class="nav-side nav-left" aria-label="Primary">
+    <a href="#rules">The gap</a>
+    <a href="#comment">How it works</a>
+  </nav>
+
+  <a class="brand" href="#top" aria-label="Open Docket — home">
+    <span class="brand-word-text">Open Docket</span>
+  </a>
+
+  <nav class="nav-side nav-right" aria-label="Secondary">
+    <a href="#video">Video</a>
+    <a href="https://github.com/vedantpawankar/product-video-cac-">GitHub</a>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false">
+      <span class="theme-toggle-label">Theme</span>
+    </button>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ── Hero ───────────────────────────────────────────────── -->
+  <section class="hero" id="top">
+    <div class="glow" aria-hidden="true"></div>
+
+    <div class="frame reveal">
+      <span class="tick tick-tl" aria-hidden="true"></span>
+      <span class="tick tick-tr" aria-hidden="true"></span>
+      <span class="tick tick-bl" aria-hidden="true"></span>
+      <span class="tick tick-br" aria-hidden="true"></span>
+
+      <p class="eyebrow">Public comment, made simple</p>
+
+      <h1>Comment on the rules <em>before they shut</em>.</h1>
+
+      <p class="lede">
+        Federal rules close for public comment on a fixed date. Then they shut, permanently.
+        Open Docket shows what is open, quotes the agency's own words, and gets you from a
+        reaction to a filed comment in a few minutes.
+      </p>
+    </div>
+
+    <div class="cta reveal">
+      <a class="btn btn-primary" href="#video">Watch the 2-minute video<span class="btn-arrow" aria-hidden="true">→</span></a>
+      <a class="btn btn-ghost" href="#comment">How it works</a>
+    </div>
+
+    <dl class="stats reveal">
+      <div><dt>33</dt><dd>rules closing within 45 days, pulled live from the Federal Register</dd></div>
+      <div><dt>12 of 17</dt><dd>rules in our sample had fewer than 50 comments</dd></div>
+      <div><dt>4</dt><dd>questions from a reaction to a filed comment</dd></div>
+      <div><dt>2</dt><dd>public sources: federalregister.gov and regulations.gov</dd></div>
+    </dl>
+  </section>
+
+  <!-- ── The video ──────────────────────────────────────────── -->
+  <section class="preview" id="video">
+    <div class="glow glow-low" aria-hidden="true"></div>
+    <header class="band-head">
+      <p class="kicker">See it running</p>
+      <h2>Two minutes, start to filed comment.</h2>
+      <p class="band-lede">
+        The hook, the real rules, the four questions, the draft letter, and what the agency
+        has to do with it.
+      </p>
+    </header>
+
+    <figure class="preview-frame reveal">
+      <span class="preview-bar" aria-hidden="true">
+        <i></i><i></i><i></i>
+        <em>open-docket · brag-v4</em>
+      </span>
+      <video controls playsinline preload="metadata" src="brag-v4.mp4" aria-label="Open Docket two-minute video"></video>
+    </figure>
+  </section>
+
+  <!-- ── The gap: real comment counts ───────────────────────── -->
+  <section class="band" id="rules">
+    <header class="band-head">
+      <p class="kicker">The gap</p>
+      <h2>Some rules get almost no comments.</h2>
+      <p class="band-lede">
+        Real comment counts from ten of the 17 rules in our sample. Red means fewer than 50.
+        The agency has to answer the comments it gets, so a few voices carry more weight.
+      </p>
+    </header>
+
+    <div class="panel reveal">
+      <table class="scale">
+        <caption>Comments per rule, from federalregister.gov (captured Sept 15, 2026)</caption>
+        <thead><tr><th scope="col">Agency</th><th scope="col">Comments</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">IRS</th><td>0</td></tr>
+          <tr><th scope="row">FDIC</th><td>0</td></tr>
+          <tr><th scope="row">FRA</th><td>4</td></tr>
+          <tr><th scope="row">HUD</th><td>26</td></tr>
+          <tr><th scope="row">CMS</th><td>28</td></tr>
+          <tr><th scope="row">ED</th><td>53</td></tr>
+          <tr><th scope="row">EEOC</th><td>953</td></tr>
+          <tr><th scope="row">ED</th><td>1,412</td></tr>
+          <tr><th scope="row">IRS</th><td>1,968</td></tr>
+          <tr><th scope="row">USCIS</th><td>8,810</td></tr>
+        </tbody>
+      </table>
+      <p class="panel-note">
+        Live counts change daily. Seven of every ten rules in the sample had fewer than 50
+        comments on the day we captured them.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── How a comment reaches the agency ───────────────────── -->
+  <section class="band" id="comment">
+    <header class="band-head">
+      <p class="kicker">How it works</p>
+      <h2>Reaction, then four questions, then a filed comment.</h2>
+      <p class="band-lede">
+        You do not write a legal brief. You answer four plain questions, and Open Docket turns
+        the answers into a letter with the docket ID already in it.
+      </p>
+    </header>
+
+    <p class="group reveal"><span>01</span> Find</p>
+    <div class="grid">
+      <article class="card card--wide reveal">
+        <span class="card-figure" aria-hidden="true">
+          <svg viewBox="0 0 48 48">
+            <rect x="6" y="10" width="36" height="28" rx="3"/>
+            <path d="M6 19 H42"/>
+            <circle class="solid" cx="11.5" cy="14.5" r="1.5"/>
+            <path d="M15 29 q9-7 18 0 q-9 7-18 0Z"/>
+            <circle class="solid" cx="24" cy="29" r="2.6"/>
+          </svg>
+        </span>
+        <h3>Rules that are open right now</h3>
+        <p>A live feed of federal rules still taking comments, with the days left on each one and the agency that issued it.</p>
+      </article>
+      <article class="card reveal">
+        <span class="card-figure" aria-hidden="true">
+          <svg viewBox="0 0 48 48">
+            <path d="M9 13 H33 M9 21 H33 M9 29 H26"/>
+            <path class="solid" d="M35 33 l9 5 -3.8 1.4 -1.4 3.8Z"/>
+          </svg>
+        </span>
+        <h3>Filter by topic</h3>
+        <p>Schools, taxes, tech, food. Narrow the feed to what touches your life.</p>
+      </article>
+    </div>
+
+    <p class="group reveal"><span>02</span> Read</p>
+    <div class="grid">
+      <article class="card card--full reveal">
+        <span class="card-figure" aria-hidden="true">
+          <svg viewBox="0 0 48 48">
+            <rect x="8" y="7" width="32" height="9" rx="2"/>
+            <rect x="8" y="19" width="32" height="9" rx="2" class="dim"/>
+            <rect x="8" y="31" width="32" height="9" rx="2" class="dim"/>
+          </svg>
+        </span>
+        <h3>The agency's own words, then the official text</h3>
+        <p>Each rule opens to the agency's own summary, the docket details, and a link to the official text before you decide anything.</p>
+      </article>
+    </div>
+
+    <p class="group reveal"><span>03</span> Answer</p>
+    <div class="grid">
+      <article class="card card--wide reveal">
+        <span class="card-figure" aria-hidden="true">
+          <svg viewBox="0 0 48 48">
+            <circle cx="11" cy="17" r="5.5"/>
+            <path d="M16.5 17 H40"/>
+            <path d="M33 12.5 L40 17 L33 21.5"/>
+          </svg>
+        </span>
+        <h3>Who are you? Then four questions</h3>
+        <p>Pick who you are, then answer: what is the problem, what is your position, and what should change. One specific sentence is enough.</p>
+      </article>
+      <article class="card reveal">
+        <span class="card-figure" aria-hidden="true">
+          <svg viewBox="0 0 48 48">
+            <path d="M7 15 H27 M7 33 H27"/>
+            <path d="M33 15 l4 4 7 -8" stroke-width="2.4"/>
+          </svg>
+        </span>
+        <h3>Specific, not vague</h3>
+        <p>Open Docket checks that your answer is specific enough to be useful before it lets you continue.</p>
+      </article>
+    </div>
+
+    <p class="group reveal"><span>04</span> File</p>
+    <div class="grid">
+      <article class="card card--full reveal">
+        <span class="card-figure" aria-hidden="true">
+          <svg viewBox="0 0 48 48">
+            <path d="M9 7 V41 M39 7 V41" stroke-dasharray="3 4" class="dim"/>
+            <circle cx="19" cy="24" r="6"/>
+            <path d="M25 24 H41"/>
+          </svg>
+        </span>
+        <h3>A draft letter with the docket ID in it</h3>
+        <p>Your four answers become one letter, headed with the docket ID. Copy it and file it on regulations.gov.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ── Authority ──────────────────────────────────────────── -->
+  <section class="band" id="authority">
+    <blockquote class="pull reveal">
+      <p>“Agencies have to answer substantive comments.”</p>
+      <cite>In writing. On the record.</cite>
+    </blockquote>
+  </section>
+
+  <!-- ── Proof ──────────────────────────────────────────────── -->
+  <section class="band" id="proof">
+    <header class="band-head">
+      <p class="kicker">From public data</p>
+      <h2>Built on real rules, not made-up examples.</h2>
+    </header>
+    <div class="grid">
+      <article class="card reveal">
+        <span class="card-figure" aria-hidden="true">
+          <svg viewBox="0 0 48 48">
+            <rect x="6" y="10" width="36" height="28" rx="3"/>
+            <path d="M6 19 H42"/>
+          </svg>
+        </span>
+        <h3>33 rules closing soon</h3>
+        <p>Pulled live from the Federal Register API when you open the feed.</p>
+      </article>
+      <article class="card reveal">
+        <span class="card-figure" aria-hidden="true">
+          <svg viewBox="0 0 48 48">
+            <path d="M9 13 H33 M9 21 H33 M9 29 H26"/>
+          </svg>
+        </span>
+        <h3>17 rules in our sample</h3>
+        <p>Each one with a real comment count, captured September 15, 2026.</p>
+      </article>
+      <article class="card reveal">
+        <span class="card-figure" aria-hidden="true">
+          <svg viewBox="0 0 48 48">
+            <circle cx="24" cy="24" r="14"/>
+            <path d="M18 24 l4 4 8 -8" stroke-width="2.4"/>
+          </svg>
+        </span>
+        <h3>Links to the official docket</h3>
+        <p>Every rule links to federalregister.gov and to the regulations.gov page where the comment is filed.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ── Closing ────────────────────────────────────────────── -->
+  <section class="closing">
+    <div class="glow glow-low" aria-hidden="true"></div>
+    <h2 class="reveal">
+      Comment before the rules <em>shut</em>.
+    </h2>
+    <div class="cta reveal">
+      <a class="btn btn-primary" href="#video">Watch the video<span class="btn-arrow" aria-hidden="true">→</span></a>
+      <a class="btn btn-ghost" href="https://github.com/vedantpawankar/product-video-cac-">See the video on GitHub</a>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <a class="brand" href="#top" aria-label="Open Docket — home">
+    <span class="brand-word-text">Open Docket</span>
+  </a>
+  <p>Public comment, made simple. Built on federalregister.gov and regulations.gov.</p>
+</footer>
+
+<script src="app.js?v=1" defer></script>
+</body>
+</html>
